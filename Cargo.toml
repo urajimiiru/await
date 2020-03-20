@@ -1,0 +1,15 @@
+[package]
+name = "tokio"
+version = "0.1.0"
+authors = ["Vladimir Todorov <vladimir.todorov@playtech.com>"]
+edition = "2018"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2", features = ["full"] }
+bytes = { version = "0.5"}
+futures = {version= "0.3"}
+reqwest = { version = "0.10.1", features = ["json"] }
+serde = { version= "1.0", features=["derive"]}
+rayon = {version="1.2.1"}
+select = "0.4.3"
